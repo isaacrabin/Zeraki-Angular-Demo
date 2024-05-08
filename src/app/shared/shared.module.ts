@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { NgxEchartsModule } from 'ngx-echarts';
 import * as echarts from 'echarts';
 import { HighchartsChartModule } from 'highcharts-angular';
-import * as Highcharts from 'highcharts';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { DoughnutComponent } from './doughnut/doughnut.component';
 import { MixedLineBarComponent } from './mixed-line-bar/mixed-line-bar.component';
 import { StackedBarComponent } from './stacked-bar/stacked-bar.component';
@@ -21,6 +21,8 @@ import { StudentPassVsFailComponent } from './student-pass-vs-fail/student-pass-
 import { SubjectHistoryComponent } from './subject-history/subject-history.component';
 import { PerfomanceTrendComponent } from './teacher-charts/perfomance-trend/perfomance-trend.component';
 import { StudentListComponent } from './teacher-charts/student-list/student-list.component';
+import { EnrolledVsTotalComponent } from './enrolled-vs-total/enrolled-vs-total.component';
+import { PerformancePerSubjectComponent } from './teacher-charts/performance-per-subject/performance-per-subject.component';
 
 
 
@@ -38,7 +40,9 @@ import { StudentListComponent } from './teacher-charts/student-list/student-list
     StudentPassVsFailComponent,
     SubjectHistoryComponent,
     PerfomanceTrendComponent,
-    StudentListComponent
+    StudentListComponent,
+    EnrolledVsTotalComponent,
+    PerformancePerSubjectComponent
 
   ],
   imports: [
@@ -47,7 +51,8 @@ import { StudentListComponent } from './teacher-charts/student-list/student-list
     HighchartsChartModule,
     NgxDatatableModule,
     SidenavComponent,
-    CountUpModule
+    CountUpModule,
+    ToastrModule.forRoot(),
 
   ],
   exports:[
@@ -66,7 +71,10 @@ import { StudentListComponent } from './teacher-charts/student-list/student-list
     StudentPassVsFailComponent,
     SubjectHistoryComponent,
     PerfomanceTrendComponent,
-    StudentListComponent
-  ]
+    StudentListComponent,
+    EnrolledVsTotalComponent,
+    PerformancePerSubjectComponent
+  ],
+  providers:[ToastrService]
 })
 export class SharedModule { }

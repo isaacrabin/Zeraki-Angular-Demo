@@ -21,21 +21,33 @@
           <li>
                 <div class="uk-flex uk-flex-row uk-flex-between">
                     <div class="body-content uk-animation-toggle" uk-slider="autoplay: true; autoplay-interval: 3000;">
-                        <div class="uk-animation-slide-bottom-small">
-                            <h1 class="font-bold text-head animate__animated animate__bounce" style="font-size: 40px;">Welcome <br>
+                        <div class="uk-animation-slide-bottom-small ">
+                            <h1 class="font-bold text-head animate__animated animate__bounce into-text">Welcome <br>
                                 Unlock Your Child's <br> Full Potential with Zeraki
                             </h1>
-                            <p class="text-desc">Zeraki brings the best high school teachers home <br>
-                                and empowers students to excel in exams and beyond.</p>
+                            <ngx-typed-js
+                            [strings]="[
+                              'Zeraki brings the best high school teachers home </br>'+
+                                'and empowers students to excel in exams and beyond.',
+                                'Taking the burden away from daily administrationtasks',
+                                'A fast and easily accessible system that </br> can be used on the go',
+                                'Intuitive analytics that knows exactly </br> what you are looking for']"
+                            [loop]="true"
+                            [typeSpeed]="40"
+                            [shuffle]="true"
+                          >
+                          <span class="home-text08 typing"></span>
+                          </ngx-typed-js>
                         </div>
                     </div>
-                    <div class="body-button body-content uk-animation-toggle">
+
+                    <div class="body-button animate__animated animate animate__pulse animate__infinite body-content uk-animation-toggle">
                         <div class="col-lg-9 uk-animation-slide-bottom-small" data-aos="fade-up" data-aos-delay="500">
                             <form method="post" class="form-box" id="submitEmail" onsubmit="return false" autocomplete="off">
                                 <div class="form-group">
                                 </div>
                                 <div class="form-group text-center">
-                                    <h4 class="text-intro">Join Us!</h4>
+                                    <h4 class="text-intro">Join Us Today!</h4>
                                     <button class="demo-btn" mode="ios" routerLink="/auth/login">Register/Request a Demo</button>
                                 </div>
                             </form>

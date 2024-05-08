@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EChartsOption } from 'echarts';
 
 @Component({
-  selector: 'app-doughnut',
-  templateUrl: './doughnut.component.html',
-  styleUrl: './doughnut.component.scss'
+  selector: 'app-enrolled-vs-total',
+  templateUrl: './enrolled-vs-total.component.html',
+  styleUrl: './enrolled-vs-total.component.scss'
 })
-export class DoughnutComponent implements OnInit{
+export class EnrolledVsTotalComponent {
   passOption: EChartsOption = {}
 
   ngOnInit(): void {
@@ -15,14 +15,14 @@ export class DoughnutComponent implements OnInit{
         trigger: 'item'
       },
       title:{
-        text:"F1 Pass Vs Fail",
+        text:"Total Vs Enrolled",
       },
       legend: {
         top: '2%',
       },
       series: [
         {
-          name: 'Gender',
+          name: 'Students',
           type: 'pie',
           radius: ['40%', '80%'],
           avoidLabelOverlap: false,
@@ -45,16 +45,13 @@ export class DoughnutComponent implements OnInit{
           labelLine: {
             show: false
           },
-          color: [  "#28a745","#f55d5d","#005b82"],
+          color: [  "#ff7d47","#bed600","#005b82"],
           data: [
-            { value: 345, name: 'Pass' },
-            { value: 35, name: 'Fail' },
+            { value: 345, name: 'Total' },
+            { value: 326, name: 'Enrolled' },
           ]
         }
       ]
     };
   }
-
-
-
 }

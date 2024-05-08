@@ -11,14 +11,14 @@
         <div class="uk-card green-card uk-card-body uk-animation-slide-left-small">
           <div class="uk-card-badge uk-label">All</div>
             <h3 class="uk-card-title">Teachers</h3>
-            <h1 [countUp]="count"></h1>
+            <h1 [countUp]="countTeacher"></h1>
         </div>
     </div>
     <div>
       <div class="uk-card class-card uk-card-body uk-animation-slide-left-small">
 
           <h3 class="uk-card-title">Total Classes</h3>
-          <h1 [countUp]="count"></h1>
+          <h1 [countUp]="countClass"></h1>
       </div>
   </div>
   </div>
@@ -29,11 +29,11 @@
 
 <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
   <app-doughnut></app-doughnut>
-  <app-doughnut></app-doughnut>
+  <app-enrolled-vs-total></app-enrolled-vs-total>
 </div>
 
 <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
-  <app-stacked-bar></app-stacked-bar>
+  <app-performance-per-subject></app-performance-per-subject>
 </div>
 
 

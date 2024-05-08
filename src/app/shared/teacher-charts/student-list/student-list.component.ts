@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-student-list',
@@ -7,4 +8,10 @@ import { Component, Input } from '@angular/core';
 })
 export class StudentListComponent {
   @Input() data: any= [];
+
+  constructor(private toastr: ToastrService){}
+
+  viewStudent(data: any){
+    this.toastr.warning(data.name,"Hello, this is");
+  }
 }

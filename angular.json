@@ -31,6 +31,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
               "node_modules/@swimlane/ngx-datatable/index.css",
               "node_modules/@swimlane/ngx-datatable/themes/material.scss",
               "node_modules/@swimlane/ngx-datatable/assets/icons.css",
@@ -103,6 +104,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
               {
                 "input": "node_modules/uikit/dist/css/uikit.min.css"
               },

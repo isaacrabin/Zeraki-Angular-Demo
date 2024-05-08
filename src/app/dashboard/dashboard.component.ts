@@ -20,7 +20,9 @@ export class DashboardComponent implements OnInit  {
 
 
   num: number = 40;
-  count = 200;
+  count = 880;
+  countClass = 25;
+  countTeacher = 113;
   duration = 5000;
   option = {
     startVal: this.num,
