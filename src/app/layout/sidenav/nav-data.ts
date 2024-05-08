@@ -41,6 +41,12 @@ export const teacherNavData: INavbarItem[] = [
   },
 
   {
+    routerLink:'dashboard/teacher/assessments',
+    icon:'fal fa-bar-chart ',
+    label:'Assessments',
+  },
+
+  {
     routerLink:'f3',
     icon:'fal fa-tags',
     label:'Performance',

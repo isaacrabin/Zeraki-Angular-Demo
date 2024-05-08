@@ -1,0 +1,18 @@
+.assign-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.assess-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .view-btn{
+    background-color: green;
+  }
+}
+
+.add-btn{
+  background-color: #0b475f;
+}
