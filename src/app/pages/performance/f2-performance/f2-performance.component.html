@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="uk-container uk-container-center">
+    <h3 class="uk-margin-top">Performance - Form 2</h3>
+      <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+        <li><a href="">Overview</a></li>
+        <li><a href="">ENG</a></li>
+        <li><a href="">KIS</a></li>
+        <li><a href="">MAT</a></li>
+        <li><a href="">BIO</a></li>
+        <li><a href="">CHEM</a></li>
+        <li><a href="">PHY</a></li>
+      </ul>
+      <ul id="my-id" class="uk-switcher uk-margin">
+        <li><a href="#" id="autoplayer" data-uk-switcher-item="next"></a>
+
+        <div >
+          <div class="card-body">
+            <div>
+              <app-history></app-history>
+            </div>
+
+            <div class="uk-margin-small-top">
+              <app-f1-termly></app-f1-termly>
+            </div>
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - English
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - Kiswahili
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - Mathematics
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - Biology
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - Chemistry
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+        <li>
+          <div class="card-head">
+            Performance - Physics
+          </div>
+          <app-subject-performance [data]="sampleData"></app-subject-performance>
+        </li>
+      </ul>
+</div>

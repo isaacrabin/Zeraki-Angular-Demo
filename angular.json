@@ -30,9 +30,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/themes/material.scss",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
+              {
+                "input": "node_modules/uikit/dist/css/uikit.min.css"
+              },
+              {
+                "input": "node_modules/uikit/dist/css/uikit-core.min.css"
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {"input": "node_modules/uikit/dist/js/uikit.min.js"},
+              {"input": "node_modules/uikit/dist/js/uikit-icons.min.js"}
+            ]
           },
           "configurations": {
             "production": {
@@ -90,12 +102,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "node_modules/uikit/dist/css/uikit.min.css"
+              },
+              {
+                "input": "node_modules/uikit/dist/css/uikit-core.min.css"
+              },
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/themes/material.scss",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              {"input": "node_modules/uikit/dist/js/uikit.min.js"},
+              {"input": "node_modules/uikit/dist/js/uikit-icons.min.js"}
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c540a08e-8ac5-425c-a57d-00e4e5d1b928"
   }
 }

@@ -1,0 +1,48 @@
+<h2>Welcome back,<span style="color: #0b475f;">Teacher</span></h2>
+<!-- <div class="card">
+  <div class="card-head">
+    Dashboard - Home
+  </div>
+  <div class="card-body">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos vel commodi dolorum sunt sint minus! Alias consequatur sequi doloremque animi tempore perspiciatis suscipit quos. Ratione ad laudantium sunt dolores suscipit.
+  </div>
+</div> -->
+
+<div class="content">
+  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match " uk-grid>
+    <div>
+        <div class="uk-card primary-card uk-card-body uk-animation-scale-up">
+            <h3 class="uk-card-title">Enrolled Students</h3>
+            <h1 [countUp]="count"></h1>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card green-card uk-card-body uk-animation-slide-left-small">
+            <h3 class="uk-card-title">Mean Mark</h3>
+            <h1 [countUp]="countMark"></h1>
+        </div>
+    </div>
+    <div>
+      <div class="uk-card class-card uk-card-body uk-animation-slide-left-small">
+
+          <h3 class="uk-card-title">Mean Grade</h3>
+          <h1>C</h1>
+      </div>
+  </div>
+  </div>
+
+  <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
+    <app-perfomance-trend></app-perfomance-trend>
+  </div>
+
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
+  <app-doughnut></app-doughnut>
+  <app-doughnut></app-doughnut>
+</div>
+
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
+  <app-stacked-bar></app-stacked-bar>
+</div>
+
+
+</div>

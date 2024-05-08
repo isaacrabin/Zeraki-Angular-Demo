@@ -1,0 +1,97 @@
+.desktop-content{
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100vh;
+  background-position: 50% -25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+  .header-section{
+    display: flex;
+    justify-content: space-between;
+    background: #0b475f;
+    height: 50px;
+    padding: 10px 30px 0 50px;
+
+    .home-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer !important;
+
+    }
+  }
+  .body-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    // display: grid;
+    grid-template-columns:auto auto;
+
+    background-image: url(../../assets/images/bg.gif);
+    background-size: cover;
+    background-position: center;
+
+    .body-content{
+      padding: 50px;
+      margin-top: 120px;
+
+      font-size: large;
+      z-index: 100;
+      .text-desc{
+        color: #FAF9F6;
+      }
+      .text-head{
+        color: #FAF9F6;
+        font-size: 30px;
+      }
+    }
+
+    .body-button{
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      z-index: 100;
+      .form-box {
+
+        padding: 40px;
+        background: #0082bb;
+        border-radius: 7px;
+
+        .text-intro{
+          color: #FAF9F6 !important;
+        }
+    }
+      // margin-top: 120px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for opacity */
+}
+
+}
+
+.demo-btn{
+  padding: 15px;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  border: none !important;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.demo-btn:hover{
+  background-color: rgb(67,171,73);
+  color: #f3f3f3 !important;
+}
+

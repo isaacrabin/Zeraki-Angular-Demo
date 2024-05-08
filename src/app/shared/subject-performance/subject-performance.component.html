@@ -1,0 +1,20 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Previous Score</th>
+        <th>Current Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of data">
+        <td>{{ person.id }}</td>
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+        <td>{{ person.current }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

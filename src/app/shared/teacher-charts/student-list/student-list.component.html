@@ -1,0 +1,32 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>ENG</th>
+        <th>KIS</th>
+        <th>MAT</th>
+        <th>PHY</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of data">
+        <td>{{ person.id }}</td>
+        <td>{{ person.name }}</td>
+        <td>{{ person.eng }}</td>
+        <td>{{ person.kis }}</td>
+        <td>{{ person.mat }}</td>
+        <td>{{ person.phy }}</td>
+        <td>
+          <div>
+            <button class="view-btn">
+              <!-- <span style="font-size: 5px;" uk-icon="eye"></span> -->
+              view</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

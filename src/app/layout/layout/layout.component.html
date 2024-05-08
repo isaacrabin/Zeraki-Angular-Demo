@@ -1,0 +1,22 @@
+<app-sidenav (ontoggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<div class="content" [ngClass]="getBodyClass()">
+  <div class="content-header">
+  <div (click)="logout()" class="uk-flex out-btn uk-text-center uk-padding-small-top uk-padding-small-right uk-animation-slide-left-top uk-flex-right">
+      <div style="font-size: 23px !important;  margin: .98rem .9rem .5rem .9rem;" class="logout-btn">
+        <span  style="font-size: 33px !important;" uk-icon="sign-out"></span>
+      </div>
+  </div>
+  </div>
+  <div class="body">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="content-footer uk-padding-small">All Rights Reserved&#64;Isaac Rabin</div>
+</div>
+
+<!-- <app-sidenav (ontoggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-layout
+[collapsed]="isSideNavCollapsed"
+[screenWidth]="screenWidth"
+></app-layout> -->
+
+
